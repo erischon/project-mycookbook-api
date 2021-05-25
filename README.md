@@ -1,4 +1,4 @@
-(https://travis-ci.com/erischon/project-mycookbook.svg?branch=master)
+![Build](https://travis-ci.com/erischon/project-mycookbook.svg?branch=master)
 
 
 # mycookbook
