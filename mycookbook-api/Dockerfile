@@ -13,6 +13,6 @@ RUN mkdir /app
 WORKDIR /app
 COPY ./app /app
 
-# create user (better for securuty)
+# create user (better for security)
 RUN adduser -D user
 USER user

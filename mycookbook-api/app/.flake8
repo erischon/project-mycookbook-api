@@ -10,3 +10,4 @@ exclude =
 
 ignore =
     E501,
+    F401,
