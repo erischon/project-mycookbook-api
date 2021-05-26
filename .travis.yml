@@ -11,4 +11,4 @@ before_script: pip install docker-compose
 
 script:
   - cd mycookbook-api
-  - docker-compose -f docker-compose.travis.yml run --rm app sh -c "coverage run --source='.' manage.py test && flake8"
+  - docker-compose -f docker-compose.travis.yml run --rm app sh -c "python manage.py test && flake8"
