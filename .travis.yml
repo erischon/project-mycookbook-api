@@ -11,4 +11,4 @@ env: DJANGO_SETTINGS_MODULE="config.settings.travis"
 
 script:
   - cd mycookbook-api
-  - docker-compose run --rm app sh -c "coverage run --source='.' manage.py test && flake8"
+  - docker-compose -f docker-compose.travis.yml run --rm app sh -c "coverage run --source='.' manage.py test && flake8"
