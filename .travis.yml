@@ -7,8 +7,6 @@ services:
 
 before_script: pip install docker-compose
 
-# env: DJANGO_SETTINGS_MODULE="config.settings.travis"
-
 script:
   - cd mycookbook-api
-  - docker-compose -f docker-compose.travis.yml run --rm app sh -c "python manage.py test && flake8"
+  - docker-compose -f docker-compose.travis.yml run --rm app sh -c "python manage.py wait_for_db && python manage.py test && flake8"
