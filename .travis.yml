@@ -7,7 +7,7 @@ services:
 
 before_script: pip install docker-compose
 
-env: DJANGO_SETTINGS_MODULE="config.settings.travis"
+# env: DJANGO_SETTINGS_MODULE="config.settings.travis"
 
 script:
   - cd mycookbook-api
